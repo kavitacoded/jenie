@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        PATH = "C:\\Users\\pkavi\\AppData\\Local\\Programs\\Python\\Python313;${env.PATH}"
+        //PATH = "C:\\Users\\pkavi\\AppData\\Local\\Programs\\Python\\Python313;${env.PATH}"
     }
 
     stages {
@@ -16,7 +16,7 @@ pipeline {
         stage('Extract Data') {
             steps {
                 echo 'Running Python script...'
-                bat '"C:\\Users\\pkavi\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" C:\\path\\to\\extract.py'
+                bat "C:\\Users\\pkavi\\AppData\\Local\\Programs\\Python\\Python313\\python.exe"
             }
         }
     }
