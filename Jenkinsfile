@@ -4,15 +4,15 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                echo 'Checking out source code...'
+                echo 'Checking out code...'
                 checkout scm
             }
         }
 
-        stage('Extract Data') {
+        stage('Run Python Script') {
             steps {
-                echo 'Running Python script...'
-                bat '"C:\\Users\\pkavi\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" C:\\path\\to\\your_script.py'
+                echo 'Executing Python script...'
+                bat '"C:\\Users\\pkavi\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" extract_data.py'
             }
         }
     }
