@@ -16,7 +16,7 @@ pipeline {
         stage('Extract Data') {
             steps {
                 echo 'Running Python script...'
-                bat '"C:\\Users\\pkavi\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" C:\\path\\to\\python extract.py'
+                bat '"C:\\Users\\pkavi\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" C:\\path\\to\\extract.py'
             }
         }
     }
