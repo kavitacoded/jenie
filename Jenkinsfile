@@ -7,7 +7,7 @@ pipeline{
         }
         stage('Extract Data'){
             steps{
-                bat 'python extract.py'
+                bat 'C:\\Users\\pkavi\\AppData\\Local\\\rograms\\Python\\Python313\\python.exe'
             }
         }
     }
